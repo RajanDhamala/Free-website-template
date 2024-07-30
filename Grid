@@ -1,4 +1,13 @@
-<!-- <div class="grid gap-2 sm:grid-cols-2 grid-cols-2 ">
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- <div class="grid gap-2 sm:grid-cols-2 grid-cols-2 ">
   <div class="bg-orange-500 min-h-[100px] rounded-md "></div>
   <div class="bg-red-500 min-h-[100px] rounded-md"></div>
 </div> -->
@@ -14,3 +23,5 @@
   <div class="bg-red-500 min-h-[100px] rounded-md sm:col-span-8"></div>
   <div class="bg-green-500 min-h-[100px] rounded-md sm:col-span-2 sm:block hidden"></div>
 </div>
+</body>
+</html>
