@@ -1,0 +1,16 @@
+<!-- <div class="grid gap-2 sm:grid-cols-2 grid-cols-2 ">
+  <div class="bg-orange-500 min-h-[100px] rounded-md "></div>
+  <div class="bg-red-500 min-h-[100px] rounded-md"></div>
+</div> -->
+
+<!-- <div class="grid gap-4 m-4 sm:grid-cols-3 "> -->
+  <!-- <div class="bg-orange-500 min-h-[100px] rounded-md"></div>
+  <div class="bg-red-500 min-h-[100px] rounded-md"></div>
+  <div class="bg-green-500 min-h-[100px] rounded-md"></div>
+</div> -->
+
+<div class="grid gap-4 m-4 sm:grid-cols-12 ">
+  <div class="bg-orange-500 min-h-[100px] rounded-md sm:col-span-2 sm:block hidden"></div>
+  <div class="bg-red-500 min-h-[100px] rounded-md sm:col-span-8"></div>
+  <div class="bg-green-500 min-h-[100px] rounded-md sm:col-span-2 sm:block hidden"></div>
+</div>
