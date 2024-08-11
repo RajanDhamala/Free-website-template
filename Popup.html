@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Modal Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <button class="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 text-white text-2xl button1" onclick="handelclick(event)">Click</button>
+
+  <div class="absolute inset-0 bg-gray-300 flex justify-center items-center cursor-pointer hidden showme">
+    <div class="bg-gray-100 rounded px-4 py-3">
+        <div class="flex justify-end" onclick="handelexit()"><button class="hover:scale-110">&#10060;</button></div>
+      <h1 class="text-2xl">Are you sure you want to change your password?</h1>
+      <div class="flex justify-center gap-x-5 mt-3">
+        <button class="bg-red-500 hover:bg-red-600 rounded-md px-4 text-white hover:scale-105" onclick="handelyes()">Yes</button>
+        <button class="bg-yellow-500 hover:bg-yellow-600 rounded-md px-4 text-white hover:scale-105" onclick="handelno()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden yesshow inset-0 absolute flex justify-center items-center">
+    <div class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+      </svg>
+      <span class="sr-only">Info</span>
+      <h1>Your password has been changed</h1>
+    </div>
+  </div>
+
+  <div class="hidden noshows inset-0 absolute flex justify-center items-center">
+    <div class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+      </svg>
+      <span class="sr-only">Info</span>
+      <h1>Your password has not been changed</h1>
+    </div>
+  </div>
+
+</body>
+<script>
+  const button = document.querySelector(".button1");
+  const show = document.querySelector(".showme");
+  const yes = document.querySelector('.yesshow');
+  const no = document.querySelector('.noshows');
+
+  function handelclick(e) {
+    e.preventDefault();
+    console.log('button clicked');
+    show.classList.remove('hidden');
+  }
+
+  function handelyes() {
+    console.log('yes');
+    yes.classList.remove('hidden');
+    show.classList.add('hidden');
+    setInterval(()=>{
+        yes.classList.add('hidden')
+    },3500)
+}
+  function handelno() {
+    console.log('No');
+    no.classList.remove('hidden');
+    show.classList.add('hidden');
+    setInterval(()=>{
+        no.classList.add('hidden')
+    },3500)
+  }
+  function handelexit(){
+    location.reload()
+  }
+</script>
+</html>
