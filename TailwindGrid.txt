@@ -1,0 +1,49 @@
+<!-- <div class="mt-10 flex justify-center bg-red-500 pt-3">
+  <div class="h-24 w-24 overflow-hidden rounded-full">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMITQvwGUsKghOkkphMx6XG697tkbjUGFnxNLdS_9cgpPcgP5lnWSVbx4Ceg7tJEfzbjM&usqp=CAU" alt="" class="h-full w-full" />
+  </div>
+</div>
+<div class="bg-green-500">
+  <h1 class="text-center text-lg font-semibold text-white">Username:TInku Bahadur</h1>
+  <div class="flex justify-center">
+    <input type="text" placeholder="Username:" readonly class="rounded-sm bg-gray-200 px-2 focus:outline-none sm:w-1/4" />
+    <button class="rounded-br-sm rounded-tr-sm border-l border-gray-200 bg-gray-200">✏️</button>
+  </div>
+</div> -->
+
+<!-- 
+  <div class="bg-green-500 size-20">1</div>
+  <div class="bg-green-500 size-20">2</div>
+  <div class="bg-green-500 size-20">3</div>
+  <div class="bg-green-500 size-20">4</div>
+  <div class="bg-green-500 size-20">5</div>
+  <div class="bg-green-500 size-20">6</div>
+</div> 
+
+ <div class="grid grid-cols-12 m-5 rounded-md gap-3">
+  <div class="bg-green-500  col-span-4">1</div>
+  <div class="bg-red-500 col-span-4">2</div>
+  <div class="bg-purple-500 col-span-4">3</div>
+  <div class="bg-blue-500 col-span-8">4</div>
+  <div class="bg-pink-500 col-span-4">5</div>
+</div> 
+
+ <div class="grid grid-rows-12 m-5 gap-3">
+  <div class="bg-red-500 row-span-3"></div>
+  <div class="bg-blue-500 row-span-7"></div>
+  <div class="bg-green-500 row-span-2"></div>
+  <div class="bg-pink-500 row-span-5"></div>
+  <div class="bg-purple-500 row-span-4"></div>
+</div> -->
+<div class="h-[50vh] grid bg-black">
+<div class="grid grid-cols-12 grid-rows-12 gap-3 m-5">
+  <div class="bg-red-500 col-span-3 row-span-4 flex justify-center items-center">1</div>
+  <div class="bg-blue-500 col-span-4 row-span-4 flex justify-center items-center">2</div>
+  <div class="bg-green-500 col-span-4 row-span-4 flex justify-center items-center">3</div>
+  <div class="bg-purple-500 col-span-8 row-span-6 flex justify-center items-center">4</div>
+  <div class="bg-pink-500 col-span-3 row-span-6 flex justify-center items-center">5</div>
+  <div class="bg-orange-500 col-span-11 row-span-4 flex justify-center items-center">6</div>
+</div> 
+</div>
+
+
