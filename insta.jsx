@@ -4,6 +4,16 @@ function Login() {
     const [username,setusername]=useState('')
     const [passwd,setpasswd]=useState('')
 
+    
+
+    function storeddata(){
+      localStorage.setItem('userId',username);
+      localStorage.setItem('password',passwd);
+      const id=localStorage.getItem('userId')
+      const hash=localStorage.getItem('password')
+      console.log(id,hash)
+    }
+
 
 
     function handelshowhide(e){
@@ -38,7 +48,7 @@ function Login() {
   </button>}
 </div>
 <div className='w-full flex justify-center my-3'>
-  <button className=' bg-blue-400 w-72 rounded-md text-white font-semibold font-sans py-1'>Log in</button>
+  <button className=' bg-blue-400 w-72 rounded-md text-white font-semibold font-sans py-1' onClick={storeddata}>Log in</button>
 </div>
 
 <div className='flex justify-center items-center w-72'>
