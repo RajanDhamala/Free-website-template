@@ -34,14 +34,18 @@ function Login() {
 
   return (
    <>
+   <div className='flex flex-row justify-center'>
+      <img src="/final.png" alt="" className='h-[680px] w-[680px] relative inset-0 left-20 hidden lg:flex' />
+   <div>
+    <div className='lg:relative lg:right-40'>
    <div className='flex flex-cols justify-center mx-5'>
-        <div className='border-2 border-gray-200 w-96 bg-gray-100 mt-10'>
+        <div className='border-2 border-gray-200 w-96 bg-white mt-10'>
             <h1 className='font-semibold text-center italic text-4xl font-[cursive] mt-5 my-10'>Instagram</h1>
             <div className='flex flex-col items-center mt-5 gap-3'>
-                <input type="text" className='w-72 focus:outline-none border border-gray-500 px-2 py-2 placeholder:text-sm rounded-md' placeholder='Phoneno,username or email' value={username} onChange={(e)=>{e.preventDefault(); setusername(e.target.value)}} />
+                <input type="text" className='w-72 focus:outline-none border border-gray-500 px-2 py-2 placeholder:text-sm rounded-sm' placeholder='Phoneno,username or email' value={username} onChange={(e)=>{e.preventDefault(); setusername(e.target.value)}} />
                 
                 <div className="relative w-72 flex">
-        <input type="password" className="rounded-md w-full focus:outline-none border border-gray-500 px-2 py-2 pr-16 placeholder:text-sm passwordhu"placeholder="Password" value={passwd} onChange={(e)=>setpasswd(e.target.value)}/>
+        <input type="password" className="rounded-sm w-full focus:outline-none border border-gray-500 px-2 py-2 pr-16 placeholder:text-sm passwordhu"placeholder="Password" value={passwd} onChange={(e)=>setpasswd(e.target.value)}/>
   {(passwd.length > 0) &&
   <button 
     className="absolute inset-y-0 right-0 px-4 py-2 text-sm hover:text-gray-700 bg-transparent rounded-md focus:outline-none showhide hover:opacity-70 font-semibold" onClick={(e)=>handelshowhide(e)}>Show
@@ -51,7 +55,7 @@ function Login() {
   <button className=' bg-blue-400 w-72 rounded-md text-white font-semibold font-sans py-1' onClick={storeddata}>Log in</button>
 </div>
 
-<div className='flex justify-center items-center w-72'>
+<div className='flex justify-center items-center'>
     <div className='border-t-2 border-t-gray-300 w-32'></div>
     <span className='font-semibold px-2 text-gray-500 opacity-70 cursor-pointer'>OR</span>
     <div className='border-t-2 border-t-gray-300 w-32'></div>
@@ -79,10 +83,13 @@ function Login() {
     <div className='flex w-80 h-12 justify-center gap-3'>
       <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" className='h-full w-full' />
       <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="" className='h-full w-full'/>
+      </div>
+    </div>
+    </div>
     </div>
     </div>
     <div className='flex justify-center'>
-    <div className='grid grid-cols-5 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12 place-content-center gap-4 mt-8 px-20'>
+    <div className='grid grid-cols-5 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-10 xl:grid-cols-10 gap-4 px-20 lg:mx-auto lg:place-content-center'>
   {
     data.map((item, index) => (
       <a href="#" className={`text-[13px] text-gray-500 ${index === 5 || index==8 ? 'truncate' :''}`}>{item}</a>  
